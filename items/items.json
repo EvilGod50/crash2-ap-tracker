@@ -1,0 +1,63 @@
+[
+    {
+        "name": "Crystal",
+        "type": "consumable",
+        "img": "images/items/Crystal.png",
+		"max_quantity": 25,
+        "codes": "Crystal"
+    },
+	{
+        "name": "Blue Gem",
+        "type": "toggle",
+        "img": "images/items/BlueGem.png",
+        "codes": "BlueGem"
+    },
+	{
+        "name": "Red Gem",
+        "type": "toggle",
+        "img": "images/items/RedGem.png",
+        "codes": "RedGem"
+    },
+	{
+        "name": "Green Gem",
+        "type": "toggle",
+        "img": "images/items/GreenGem.png",
+        "codes": "GreenGem"
+    },
+	{
+        "name": "Yellow Gem",
+        "type": "toggle",
+        "img": "images/items/YellowGem.png",
+        "codes": "YellowGem"
+    },
+    {
+        "name": "Purple Gem",
+        "type": "toggle",
+        "img": "images/items/PurpleGem.png",
+        "codes": "PurpleGem"
+    },
+    {
+        "name": "Polar",
+        "type": "toggle",
+        "img": "images/items/Polar.png",
+        "codes": "Polar"
+    },
+	{
+        "name": "Jetpack",
+        "type": "toggle",
+        "img": "images/items/Jetpack.png",
+        "codes": "Jetpack"
+    },
+    {
+        "name": "Jetboard",
+        "type": "toggle",
+        "img": "images/items/Jetboard.png",
+        "codes": "Jetboard"
+    },
+    {
+        "name": "Firefly",
+        "type": "toggle",
+        "img": "images/items/FireFly.png",
+        "codes": "Firefly"
+    }
+]
