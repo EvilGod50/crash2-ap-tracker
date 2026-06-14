@@ -58,14 +58,14 @@ function polarlocklogic2()
  	end
 end
 function fireflylocklogic()
-	if (Tracker:ProviderCountForCode("firefly") == 1) or (Tracker:ProviderCountForCode("fireflylocklogic") == 3) then
+	if (Tracker:ProviderCountForCode("fireflies") == 1) or (Tracker:ProviderCountForCode("fireflylocklogic") == 3) then
 		return true
 	else
 		return false
  	end
 end
 function fireflylocklogic2()
-	if (Tracker:ProviderCountForCode("firefly") == 1) or (Tracker:ProviderCountForCode("fireflylocklogic") >= 2) then
+	if (Tracker:ProviderCountForCode("fireflies") == 1) or (Tracker:ProviderCountForCode("fireflylocklogic") >= 2) then
 		return true
 	else
 		return false
