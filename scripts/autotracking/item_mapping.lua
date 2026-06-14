@@ -1,12 +1,12 @@
 -- Update onClear if any new items are added to the UI
 ITEM_MAPPING = {
 	[1] = {{"Crystal", "consumable"}},
-	[2] = {{"ClearGem", "consumeable"}},
-	[3] = {{"BlueGem", "toggle"}},
-	[4] = {{"RedGem", "toggle"}},
-	[5] = {{"GreenGem", "toggle"}},
-	[6] = {{"YellowGem", "toggle"}},
-	[7] = {{"PurpleGem", "toggle"}},
+	[2] = {{"Clear Gem", "consumeable"}},
+	[3] = {{"Blue Gem", "toggle"}},
+	[4] = {{"Red Gem", "toggle"}},
+	[5] = {{"Green Gem", "toggle"}},
+	[6] = {{"Yellow Gem", "toggle"}},
+	[7] = {{"Purple Gem", "toggle"}},
 	[8] = {{"Life", "consumeable"}},
 	[9] = {{"WumpaFruit", "consumeable"}},
 	[10] = {{"BigCrashTrap", "consumeable"}},
@@ -16,5 +16,5 @@ ITEM_MAPPING = {
 	[14] = {{"Polar", "toggle"}},
 	[15] = {{"Jetpack", "toggle"}},
 	[16] = {{"Jetboard", "toggle"}},
-	[17] = {{"Firefly", "toggle"}},
+	[17] = {{"Fireflies", "toggle"}},
 }

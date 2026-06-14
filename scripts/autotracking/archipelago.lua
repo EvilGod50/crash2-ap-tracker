@@ -66,7 +66,7 @@ function onClear(slotdata)
 	Tracker:FindObjectForCode("Polar").Active = true
 	Tracker:FindObjectForCode("Jetpack").Active = true
 	Tracker:FindObjectForCode("Jetboard").Active = true
-	Tracker:FindObjectForCode("Firefly").Active = true
+	Tracker:FindObjectForCode("Fireflies").Active = true
 	
 	-- reset options
 	Tracker:FindObjectForCode("levelexitlocations").Active = false
@@ -120,8 +120,8 @@ function onItem(index, item_id, item_name, player_number)
     end
 	
     CUR_INDEX = index;
-	
-    local itemtracker = Tracker:FindObjectForCode(item_name)
+	local itemnospace = item_name:gsub("%s", "")
+	local itemtracker = Tracker:FindObjectForCode(itemnospace)
 	if (itemtracker) ~= nil then
 		if itemtracker.Type == "toggle" then
 			itemtracker.Active = true
