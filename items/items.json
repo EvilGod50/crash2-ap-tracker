@@ -55,9 +55,9 @@
         "codes": "Jetboard"
     },
     {
-        "name": "Firefly",
+        "name": "Fireflies",
         "type": "toggle",
-        "img": "images/items/FireFly.png",
-        "codes": "Firefly"
+        "img": "images/items/Fireflies.png",
+        "codes": "Fireflies"
     }
 ]
