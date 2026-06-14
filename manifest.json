@@ -11,5 +11,5 @@
             "flags": ["ap"]
         },
     },
-    "versions_url": "https://raw.githubusercontent.com/evilgod/crash2-ap-tracker/versions/versions.json"
+    "versions_url": "https://raw.githubusercontent.com/EvilGod50/crash2-ap-tracker/refs/heads/main/versions.json"
 }
