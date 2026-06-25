@@ -8,8 +8,7 @@
                 "Check Github for changes"
         
 			]
-		},
-		{
+		},{
             "package_version": "0.0.1",
             "download_url": "https://github.com/EvilGod50/crash2-ap-tracker/releases/download/0.0.1/crash2-ap-tracker.zip",
             "sha256": "3e4d52569cd923c5c4c9159544599c14da686b74",
