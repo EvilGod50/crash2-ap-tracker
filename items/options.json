@@ -38,6 +38,12 @@
         "codes": "excludedifficultwumpas"
     },
 	{
+        "name": "Life Sanity",
+        "type": "toggle",
+        "img": "images/locations/Life.png",
+        "codes": "lifesanity"
+    },
+	{
         "name": "Randomize Warp Destinations",
         "type": "toggle",
         "img": "images/locations/LevelExit.png",

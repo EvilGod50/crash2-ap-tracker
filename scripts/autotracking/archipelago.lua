@@ -75,6 +75,7 @@ function onClear(slotdata)
 	Tracker:FindObjectForCode("ruinationskipgreen").Active = false
 	Tracker:FindObjectForCode("fruitsanity").AcquiredCount = 0
 	Tracker:FindObjectForCode("excludedifficultwumpas").Active = false
+	Tracker:FindObjectForCode("lifesanity").Active = false
 	Tracker:FindObjectForCode("randomizewarpdestinations").Active = false
 	Tracker:FindObjectForCode("gimmicklock").Active = false
 	Tracker:FindObjectForCode("jetpacklocklogic").AcquiredCount = 0
@@ -85,6 +86,10 @@ function onClear(slotdata)
 	connected = true
 	slot_options(slotdata)
 	warp_room_destinations(slotdata)
+	
+	if options["life_count_checks"] ~= nil then
+		lifes = options["life_count_checks"]
+	end
 	
 	player_id = Archipelago.PlayerNumber or -1
 	team_number = Archipelago.TeamNumber or 0

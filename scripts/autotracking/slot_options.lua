@@ -1,6 +1,6 @@
 function slot_options(slotdata)
 	
-	local options = slotdata["options"]
+	options = slotdata["options"]
 	
     if options["level_exit_locations"] ~= nil then
 		local opt = Tracker:FindObjectForCode("levelexitlocations")
@@ -10,27 +10,27 @@ function slot_options(slotdata)
 		end
 	end
 	
-	-- Speedrun Logic Slot settings
+	-- Speedrun logic Slot settings
 	if options["speedrun_logic"] ~= nil then
-		if options["red_gem_early"] ~= nil then
-			local opt = Tracker:FindObjectForCode("redgemearly")
-			local slotval = options["red_gem_early"]
-			if (opt) and (slotval == 1) then
-				opt.Active = true
+		for _, speed in ipairs(options["speedrun_logic"]) do
+			speedstring = string.lower(speed)
+			if speedstring == string.lower("red_gem_early") then
+				local opt = Tracker:FindObjectForCode("redgemearly")
+				if opt then
+					opt.Active = true
+				end
 			end
-		end
-		if options["road_to_ruin_gem"] ~= nil then
-			local opt = Tracker:FindObjectForCode("roadtoruingem")
-			local slotval = options["road_to_ruin_gem"]
-			if (opt) and (slotval == 1) then
-				opt.Active = true
+			if speedstring == string.lower("road_to_ruin_gem") then
+				local opt = Tracker:FindObjectForCode("roadtoruingem")
+				if opt then
+					opt.Active = true
+				end
 			end
-		end
-		if options["ruination_skip_green"] ~= nil then
-			local opt = Tracker:FindObjectForCode("ruinationskipgreen")
-			local slotval = options["ruination_skip_green"]
-			if (opt) and (slotval == 1) then
-				opt.Active = true
+			if speedstring == string.lower("ruination_skip_green") then
+				local opt = Tracker:FindObjectForCode("ruinationskipgreen")
+				if opt then
+					opt.Active = true
+				end
 			end
 		end
 	end
@@ -48,6 +48,15 @@ function slot_options(slotdata)
 			if (opt) and (slotval == 1) then
 				opt.Active = true
 			end
+		end
+	end
+	
+	-- Life Sanity Slot Settings
+	if options["life_sanity"] ~= nil then
+		local opt = Tracker:FindObjectForCode("lifesanity")
+		local slotval = options["life_sanity"]
+		if (opt) and (slotval == 1) then
+			opt.Active = true
 		end
 	end
 	
@@ -121,7 +130,7 @@ function slot_options(slotdata)
 			if opt then
 				opt.AcquiredCount = slotval
 			end
-			Tracker:FindObjectForCode("Firefly").Active = false
+			Tracker:FindObjectForCode("Fireflies").Active = false
 		end
 	end
 end

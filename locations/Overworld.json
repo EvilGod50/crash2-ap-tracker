@@ -214,6 +214,48 @@
 			"name": "Snow Go",
 			"sections": [
 				{
+					"name": "Snow Go Secret Entrance High Above The Ice Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|aircrash", "$levelaccess|beardown, [$polarlocklogic]"],
+					"visibility_rules": "lifesanity"			
+				},
+				{
+					"name": "Snow Go Secret Entrance High Above The Ice Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|aircrash", "$levelaccess|beardown, [$polarlocklogic]"],
+					"visibility_rules": "lifesanity"			
+				},
+				{
+					"name": "Snow Go Secret Entrance Secret Stash Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|aircrash", "$levelaccess|beardown, [$polarlocklogic]"],
+					"visibility_rules": "lifesanity"			
+				},
+				{
+					"name": "Snow Go Secret Entrance Arrow Crates Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|aircrash", "$levelaccess|beardown, [$polarlocklogic]"],
+					"visibility_rules": "lifesanity"			
+				},
+				{
+					"name": "Snow Go Secret Entrance Arrow Crates Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|aircrash", "$levelaccess|beardown, [$polarlocklogic]"],
+					"visibility_rules": "lifesanity"			
+				},
+				{
+					"name": "Snow Go Secret Entrance Next To Nitros Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|aircrash", "$levelaccess|beardown, [$polarlocklogic]"],
+					"visibility_rules": "lifesanity"			
+				},
+				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
 					"chest_opened_img": "images/locations/CrystalOff.png",
@@ -2643,6 +2685,12 @@
 			"access_rules": "$levelaccess|snowbiz",
 			"sections": [
 				{
+					"name": "Snow Biz Before Drop Down Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"			
+				},
+				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
 					"chest_opened_img": "images/locations/CrystalOff.png"
@@ -4040,29 +4088,57 @@
 			"name": "Air Crash",
 			"sections": [
 				{
+					"name": "Air Crash Secret Entrance Above Boxes Part 1^ Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity",
+					"access_rules": ["$levelaccess|beardown, [$polarlocklogic]"]
+				},
+				{
+					"name": "Air Crash Secret Entrance Above Boxes Part 2^ Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity",
+					"access_rules": ["$levelaccess|beardown, [$polarlocklogic]"]			
+				},
+				{
+					"name": "Air Crash Secret Entrance Above Boxes Part 3^ Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity",
+					"access_rules": ["$levelaccess|beardown, [$polarlocklogic]"]		
+				},
+				{
+					"name": "Air Crash Bonus Big Jump Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
+				},
+				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
 					"chest_opened_img": "images/locations/CrystalOff.png",
-					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown"]
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
 				{
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
 					"chest_opened_img": "images/locations/ClearGemOff.png",
-					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown"]
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
 				{
 					"name": "Clear Gem (Death Route)",
 					"chest_unopened_img": "images/items/ClearGem.png",
 					"chest_opened_img": "images/locations/ClearGemOff.png",
-					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown"]
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
 				{
 					"name": "Regular Exit",
 					"chest_unopened_img": "images/locations/LevelExit.png",
 					"chest_opened_img": "images/locations/LevelExitOff.png",
 					"visibility_rules": "levelexitlocations",
-					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown"]
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
 				{
 					"name": "Secret Exit",
@@ -4078,159 +4154,196 @@
 		},
 		{
 			"name": "Air Crash Wumpa Fruit",
-			"access_rules": ["jetboard, $levelaccess|aircrash"],
 			"sections": [
 				{
                     "name": "Air Crash Bonus Big Jump Part 1 Bundle (6 Wumpas)",
-					"visibility_rules": "$fruitbundles"
+					"visibility_rules": "$fruitbundles",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 1 Wumpa #1",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 1 Wumpa #2",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 1 Wumpa #3",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 1 Wumpa #4",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 1 Wumpa #5",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 1 Wumpa #6",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Bundle (6 Wumpas)",
-					"visibility_rules": "$fruitbundles"
+					"visibility_rules": "$fruitbundles",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Wumpa #1",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Wumpa #2",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Wumpa #3",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Wumpa #4",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Wumpa #5",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 2 Wumpa #6",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Bundle (6 Wumpas)",
-					"visibility_rules": "$fruitbundles"
+					"visibility_rules": "$fruitbundles",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Wumpa #1",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Wumpa #2",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Wumpa #3",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Wumpa #4",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Wumpa #5",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Bonus Big Jump Part 3 Wumpa #6",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
 					"name": "Air Crash Death Route After Moving Pillars Bundle (5 Wumpas)",
-					"visibility_rules": "$fruitbundles"
+					"visibility_rules": "$fruitbundles",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route After Moving Pillars Wumpa #1",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route After Moving Pillars Wumpa #2",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route After Moving Pillars Wumpa #3",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
 					"name": "Air Crash Death Route After Moving Pillars Wumpa #4",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route After Moving Pillars Wumpa #5",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route Start Bundle (3 Wumpas)",
-					"visibility_rules": "$fruitbundles"
+					"visibility_rules": "$fruitbundles",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route Start Wumpa #1",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route Start Wumpa #2",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Death Route Start Wumpa #3",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
 					"name": "Air Crash Secret Entrance End Bundle (6 Wumpas)",
-					"visibility_rules": "$fruitbundles"
+					"visibility_rules": "$fruitbundles",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Secret Entrance End Wumpa #1",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Secret Entrance End Wumpa #2",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Secret Entrance End Wumpa #3",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Secret Entrance End Wumpa #4",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Secret Entrance End Wumpa #5",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
                 {
                     "name": "Air Crash Secret Entrance End Wumpa #6",
-					"visibility_rules": "$fullsanity"
+					"visibility_rules": "$fullsanity",
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				}
 			],
 			"map_locations": [{
@@ -4400,6 +4513,18 @@
 			"name": "Crash Crush",
 			"access_rules": "$levelaccess|crashcrush",
 			"sections": [
+				{
+					"name": "Crash Crush Bonus Secret Stash Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Crash Crush Bonus Stone Blocks Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
@@ -6111,32 +6236,28 @@
 		},
 		{
 			"name": "Bear Down",
-			"access_rules": "$levelaccess|beardown",
+			"access_rules": "$levelaccess|beardown, [$polarlocklogic]",
 			"sections": [
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
-					"chest_opened_img": "images/locations/CrystalOff.png",
-					"access_rules": "[$polarlocklogic]"
+					"chest_opened_img": "images/locations/CrystalOff.png"
 				},
 				{
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
-					"chest_opened_img": "images/locations/ClearGemOff.png",
-					"access_rules": "[$polarlocklogic]"
+					"chest_opened_img": "images/locations/ClearGemOff.png"
 				},
 				{
 					"name": "Regular Exit",
 					"chest_unopened_img": "images/locations/LevelExit.png",
 					"chest_opened_img": "images/locations/LevelExitOff.png",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "levelexitlocations"
 				},
 				{
 					"name": "Secret Exit",
 					"chest_unopened_img": "images/locations/LevelExit.png",
-					"chest_opened_img": "images/locations/LevelExitOff.png",
-					"access_rules": "[$polarlocklogic]"
+					"chest_opened_img": "images/locations/LevelExitOff.png"
 				}
 			],
 			"map_locations": [{
@@ -6148,331 +6269,266 @@
 		},
 		{
 			"name": "Bear Down Wumpa Fruit",
-			"access_rules": "$levelaccess|beardown",
+			"access_rules": "$levelaccess|beardown, [$polarlocklogic]",
 			"sections": [
 				{
 					"name": "Bear Down Before First Statues Bundle (4 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
 				{
 					"name": "Bear Down Before First Statues Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before First Statues Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before First Statues Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before First Statues Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before Second Statues Bundle (3 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Before Second Statues Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before Second Statues Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before Second Statues Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Bundle (6 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #5",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #6",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Bundle (5 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #5",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Bundle (3 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Bundle (6 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #5",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #6",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Bundle (4 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Bundle (3 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Bundle (3 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Bundle (7 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #5",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #6",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #7",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Bundle (10 Wumpas)",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #1",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #10",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #2",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #3",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #4",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #5",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #6",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #7",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #8",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #9",
-					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 			    }
 			],
@@ -6486,6 +6542,13 @@
 		{
 			"name": "Road to Ruin",
 			"sections": [
+				{
+					"name": "Road To Ruin Death Route Safe Spot Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": ["$levelaccess|roadtoruin", "$levelaccess|digginit"],
+					"visibility_rules": "lifesanity"
+				},
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
@@ -6944,6 +7007,20 @@
 			"name": "Un-Bearable",
 			"access_rules": "$levelaccess|un-bearable",
 			"sections": [
+				{
+					"name": "Un-Bearable Secret Area Upper Path^ Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": "[$polarlocklogic2]",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Un-Bearable Bonus Big Jump^ Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules": "[$polarlocklogic2]",
+					"visibility_rules": "lifesanity"
+				},
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
@@ -8199,6 +8276,36 @@
 			"access_rules": "$levelaccess|hanginout",
 			"sections": [
 				{
+					"name": "Hangin Out Before Secret Exit Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Hangin Out Before Secret Exit Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Hangin Out Before Secret Exit Part 3 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Hangin Out Before Secret Exit Part 4 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Hangin Out Before Secret Exit Part 5 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
 					"chest_opened_img": "images/locations/CrystalOff.png"
@@ -8567,6 +8674,24 @@
 			"name": "Diggin It",
 			"access_rules": "$levelaccess|digginit",
 			"sections": [
+				{
+					"name": "Diggin It Bonus Secret Stash Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Diggin It Bonus Secret Stash Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Diggin It Bonus Secret Stash Part 3 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
@@ -9229,6 +9354,18 @@
 			"name": "Cold Hard Crash",
 			"access_rules": "$levelaccess|coldhardcrash",
 			"sections": [
+				{
+					"name": "Cold Hard Crash Drop Down Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
+					"name": "Cold Hard Crash In Between Crushers Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
@@ -11243,6 +11380,12 @@
 			"access_rules": "$levelaccess|pistonitaway",
 			"sections": [
 				{
+					"name": "Piston It Away Between Nitros Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
+				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
 					"chest_opened_img": "images/locations/CrystalOff.png"
@@ -12730,6 +12873,103 @@
 			"access_rules": "$levelaccess|spacedout",
 			"sections": [
 				{
+					"name": "Spaced Out Blue Gem Path Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Blue Gem Path Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Blue Gem Path Part 3 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Blue Gem Path Part 4 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Green Gem Path Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Green Gem Path Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Yellow Gem Path Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Yellow Gem Path Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Yellow Gem Path Part 3 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Yellow Gem Path Part 4 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Red Gem Path Part 1 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem,RedGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Red Gem Path Part 2 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem,RedGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out Red Gem Path Part 3 Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"access_rules":	["BlueGem,GreenGem,YellowGem,RedGem"],
+					"visibility_rules": "lifesanity"					
+				},
+				{
+					"name": "Spaced Out High Above Moving Platform Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"					
+				},
+				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
 					"chest_opened_img": "images/locations/CrystalOff.png"
@@ -13818,6 +14058,474 @@
 				"y": 30,
 				"size": 20
 			}]
-		}		
+		},
+		{
+			"name": "Lives",
+			"chest_unopened_img": "/images/locations/Life.png",
+			"chest_opened_img": "/images/locations/LifeOff.png",
+			"sections": [
+				{
+                "name": "Collect 5 Lives",
+                "visibility_rules": "$lifecount|5"
+            },
+            {
+                "name": "Collect 6 Lives",
+                "visibility_rules": "$lifecount|6"
+            },
+            {
+                "name": "Collect 7 Lives",
+                "visibility_rules": "$lifecount|7"
+            },
+            {
+                "name": "Collect 8 Lives",
+                "visibility_rules": "$lifecount|8"
+            },
+            {
+                "name": "Collect 9 Lives",
+                "visibility_rules": "$lifecount|9"
+            },
+            {
+                "name": "Collect 10 Lives",
+                "visibility_rules": "$lifecount|10"
+            },
+            {
+                "name": "Collect 11 Lives",
+                "visibility_rules": "$lifecount|11"
+            },
+            {
+                "name": "Collect 12 Lives",
+                "visibility_rules": "$lifecount|12"
+            },
+            {
+                "name": "Collect 13 Lives",
+                "visibility_rules": "$lifecount|13"
+            },
+            {
+                "name": "Collect 14 Lives",
+                "visibility_rules": "$lifecount|14"
+            },
+            {
+                "name": "Collect 15 Lives",
+                "visibility_rules": "$lifecount|15"
+            },
+            {
+                "name": "Collect 16 Lives",
+                "visibility_rules": "$lifecount|16"
+            },
+            {
+                "name": "Collect 17 Lives",
+                "visibility_rules": "$lifecount|17"
+            },
+            {
+                "name": "Collect 18 Lives",
+                "visibility_rules": "$lifecount|18"
+            },
+            {
+                "name": "Collect 19 Lives",
+                "visibility_rules": "$lifecount|19"
+            },
+            {
+                "name": "Collect 20 Lives",
+                "visibility_rules": "$lifecount|20"
+            },
+            {
+                "name": "Collect 21 Lives",
+                "visibility_rules": "$lifecount|21"
+            },
+            {
+                "name": "Collect 22 Lives",
+                "visibility_rules": "$lifecount|22"
+            },
+            {
+                "name": "Collect 23 Lives",
+                "visibility_rules": "$lifecount|23"
+            },
+            {
+                "name": "Collect 24 Lives",
+                "visibility_rules": "$lifecount|24"
+            },
+            {
+                "name": "Collect 25 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|25"
+            },
+            {
+                "name": "Collect 26 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|26"
+            },
+            {
+                "name": "Collect 27 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|27"
+            },
+            {
+                "name": "Collect 28 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|28"
+            },
+            {
+                "name": "Collect 29 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|29"
+            },
+            {
+                "name": "Collect 30 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|30"
+            },
+            {
+                "name": "Collect 31 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|31"
+            },
+            {
+                "name": "Collect 32 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|32"
+            },
+            {
+                "name": "Collect 33 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|33"
+            },
+            {
+                "name": "Collect 34 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|34"
+            },
+            {
+                "name": "Collect 35 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|35"
+            },
+            {
+                "name": "Collect 36 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|36"
+            },
+            {
+                "name": "Collect 37 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|37"
+            },
+            {
+                "name": "Collect 38 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|38"
+            },
+            {
+                "name": "Collect 39 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|39"
+            },
+            {
+                "name": "Collect 40 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|40"
+            },
+            {
+                "name": "Collect 41 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|41"
+            },
+            {
+                "name": "Collect 42 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|42"
+            },
+            {
+                "name": "Collect 43 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|43"
+            },
+            {
+                "name": "Collect 44 Lives",
+                "access_rules": ["[Crystal:5]"],
+                "visibility_rules": "$lifecount|44"
+            },
+            {
+                "name": "Collect 45 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|45"
+            },
+            {
+                "name": "Collect 46 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|46"
+            },
+            {
+                "name": "Collect 47 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|47"
+            },
+            {
+                "name": "Collect 48 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|48"
+            },
+            {
+                "name": "Collect 49 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|49"
+            },
+            {
+                "name": "Collect 50 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|50"
+            },
+            {
+                "name": "Collect 51 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|51"
+            },
+            {
+                "name": "Collect 52 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|52"
+            },
+            {
+                "name": "Collect 53 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|53"
+            },
+            {
+                "name": "Collect 54 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|54"
+            },
+            {
+                "name": "Collect 55 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|55"
+            },
+            {
+                "name": "Collect 56 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|56"
+            },
+            {
+                "name": "Collect 57 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|57"
+            },
+            {
+                "name": "Collect 58 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|58"
+            },
+            {
+                "name": "Collect 59 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|59"
+            },
+            {
+                "name": "Collect 60 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|60"
+            },
+            {
+                "name": "Collect 61 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|61"
+            },
+            {
+                "name": "Collect 62 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|62"
+            },
+            {
+                "name": "Collect 63 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|63"
+            },
+            {
+                "name": "Collect 64 Lives",
+                "access_rules": ["[Crystal:10]"],
+                "visibility_rules": "$lifecount|64"
+            },
+            {
+                "name": "Collect 65 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|65"
+            },
+            {
+                "name": "Collect 66 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|66"
+            },
+            {
+                "name": "Collect 67 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|67"
+            },
+            {
+                "name": "Collect 68 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|68"
+            },
+            {
+                "name": "Collect 69 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|69"
+            },
+            {
+                "name": "Collect 70 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|70"
+            },
+            {
+                "name": "Collect 71 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|71"
+            },
+            {
+                "name": "Collect 72 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|72"
+            },
+            {
+                "name": "Collect 73 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|73"
+            },
+            {
+                "name": "Collect 74 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|74"
+            },
+            {
+                "name": "Collect 75 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|75"
+            },
+            {
+                "name": "Collect 76 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|76"
+            },
+            {
+                "name": "Collect 77 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|77"
+            },
+            {
+                "name": "Collect 78 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|78"
+            },
+            {
+                "name": "Collect 79 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|79"
+            },
+            {
+                "name": "Collect 80 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|80"
+            },
+            {
+                "name": "Collect 81 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|81"
+            },
+            {
+                "name": "Collect 82 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|82"
+            },
+            {
+                "name": "Collect 83 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|83"
+            },
+            {
+                "name": "Collect 84 Lives",
+                "access_rules": ["[Crystal:15]"],
+                "visibility_rules": "$lifecount|84"
+            },
+            {
+                "name": "Collect 85 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|85"
+            },
+            {
+                "name": "Collect 86 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|86"
+            },
+            {
+                "name": "Collect 87 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|87"
+            },
+            {
+                "name": "Collect 88 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|88"
+            },
+            {
+                "name": "Collect 89 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|89"
+            },
+            {
+                "name": "Collect 90 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|90"
+            },
+            {
+                "name": "Collect 91 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|91"
+            },
+            {
+                "name": "Collect 92 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|92"
+            },
+            {
+                "name": "Collect 93 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|93"
+            },
+            {
+                "name": "Collect 94 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|94"
+            },
+            {
+                "name": "Collect 95 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|95"
+            },
+            {
+                "name": "Collect 96 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|96"
+            },
+            {
+                "name": "Collect 97 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|97"
+            },
+            {
+                "name": "Collect 98 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|98"
+            },
+            {
+                "name": "Collect 99 Lives",
+                "access_rules": ["[Crystal:20]"],
+                "visibility_rules": "$lifecount|99"
+            }
+			],
+			"map_locations": [{
+				"map": "Overworld",
+				"x": 80,
+				"y": 30,
+				"size": 20
+			}]
+		}
 	]
 }]

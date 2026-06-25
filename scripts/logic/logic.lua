@@ -72,6 +72,17 @@ function fireflylocklogic2()
  	end
 end
 
+-- Life Count Checks for visability
+function lifecount(life)
+	if (connected) then
+		if (lifes[1] == life) or (lifes[2] == life) or (lifes[3] == life) or (lifes[4] == life) or (lifes[5] == life) or (lifes[6] == life) or (lifes[7] == life) or (lifes[8] == life) or (lifes[9] == life) or (lifes[10] == life) or (lifes[11] == life) or (lifes[12] == life) or (lifes[13] == life) or (lifes[14] == life) or (lifes[15] == life) or (lifes[16] == life) or (lifes[17] == life) or (lifes[18] == life) or (lifes[19] == life) or (lifes[20] == life) or (lifes[21] == life) or (lifes[22] == life) or (lifes[23] == life) or (lifes[24] == life) or (lifes[25] == life) or (lifes[26] == life) or (lifes[27] == life) or (lifes[28] == life) or (lifes[29] == life) or (lifes[30] == life) or (lifes[31] == life) or (lifes[32] == life) or (lifes[33] == life) or (lifes[34] == life) or (lifes[35] == life) or (lifes[36] == life) or (lifes[37] == life) or (lifes[38] == life) or (lifes[39] == life) or (lifes[40] == life) or (lifes[41] == life) or (lifes[42] == life) or (lifes[43] == life) or (lifes[44] == life) or (lifes[45] == life) or (lifes[46] == life) or (lifes[47] == life) or (lifes[48] == life) or (lifes[49] == life) or (lifes[50] == life) or (lifes[51] == life) or (lifes[52] == life) or (lifes[53] == life) or (lifes[54] == life) or (lifes[55] == life) or (lifes[56] == life) or (lifes[57] == life) or (lifes[58] == life) or (lifes[59] == life) or (lifes[60] == life) or (lifes[61] == life) or (lifes[62] == life) or (lifes[63] == life) or (lifes[64] == life) or (lifes[65] == life) or (lifes[66] == life) or (lifes[67] == life) or (lifes[68] == life) or (lifes[69] == life) or (lifes[70] == life) or (lifes[71] == life) or (lifes[72] == life) or (lifes[73] == life) or (lifes[74] == life) or (lifes[75] == life) or (lifes[76] == life) or (lifes[77] == life) or (lifes[78] == life) or (lifes[79] == life) or (lifes[80] == life) or (lifes[81] == life) or (lifes[82] == life) or (lifes[83] == life) or (lifes[84] == life) or (lifes[85] == life) or (lifes[86] == life) or (lifes[87] == life) or (lifes[88] == life) or (lifes[89] == life) or (lifes[90] == life) or (lifes[91] == life) or (lifes[92] == life) or (lifes[93] == life) or (lifes[94] == life) or (lifes[95] == life) then
+			return true
+		else
+			return false
+		end
+	end
+end
+
 --Level Access Logic for Warp Room Destination's
 function levelaccess(level)
 	if (level == "turtlewoods") and (connected) then
