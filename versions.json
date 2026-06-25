@@ -3,7 +3,7 @@
         {
             "package_version": "0.1.0",
             "download_url": "https://github.com/EvilGod50/crash2-ap-tracker/releases/download/0.1.0/crash2-ap-tracker.zip",
-            "sha256": "f26a02d4a473305d6330125205cc6e0e972ae5b5",
+            "sha256": "6f69a324fa4f25d014cfa227a28399a03c1bcc1fda2652d7fd9b8b5a42850b8e",
             "changelog": [
                 "Check Github for changes"
         
@@ -11,7 +11,7 @@
 		},{
             "package_version": "0.0.1",
             "download_url": "https://github.com/EvilGod50/crash2-ap-tracker/releases/download/0.0.1/crash2-ap-tracker.zip",
-            "sha256": "3e4d52569cd923c5c4c9159544599c14da686b74",
+            "sha256": "d11c2778afa4e36557e153286baf6c95aec1bd4072fc8bd6b29cbf7db4a10d9e",
             "changelog": [
                 "Initial release check github"
 			]
