@@ -6236,28 +6236,32 @@
 		},
 		{
 			"name": "Bear Down",
-			"access_rules": "$levelaccess|beardown, [$polarlocklogic]",
+			"access_rules": "$levelaccess|beardown",
 			"sections": [
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
-					"chest_opened_img": "images/locations/CrystalOff.png"
+					"chest_opened_img": "images/locations/CrystalOff.png", 
+					"access_rules": "[$polarlocklogic]"
 				},
 				{
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
-					"chest_opened_img": "images/locations/ClearGemOff.png"
+					"chest_opened_img": "images/locations/ClearGemOff.png",
+					"access_rules": "[$polarlocklogic]"
 				},
 				{
 					"name": "Regular Exit",
 					"chest_unopened_img": "images/locations/LevelExit.png",
 					"chest_opened_img": "images/locations/LevelExitOff.png",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "levelexitlocations"
 				},
 				{
 					"name": "Secret Exit",
 					"chest_unopened_img": "images/locations/LevelExit.png",
-					"chest_opened_img": "images/locations/LevelExitOff.png"
+					"chest_opened_img": "images/locations/LevelExitOff.png",
+					"access_rules": "[$polarlocklogic]"
 				}
 			],
 			"map_locations": [{
@@ -6269,266 +6273,331 @@
 		},
 		{
 			"name": "Bear Down Wumpa Fruit",
-			"access_rules": "$levelaccess|beardown, [$polarlocklogic]",
+			"access_rules": "$levelaccess|beardown",
 			"sections": [
 				{
 					"name": "Bear Down Before First Statues Bundle (4 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
 				{
 					"name": "Bear Down Before First Statues Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before First Statues Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before First Statues Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before First Statues Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before Second Statues Bundle (3 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Before Second Statues Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before Second Statues Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Before Second Statues Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Bundle (6 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #5",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 1 Wumpa #6",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Bundle (5 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Ending Part 2 Wumpa #5",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Bundle (3 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before Metal Crates Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Bundle (6 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #5",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down First Checkpoint Before TNT Wumpa #6",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Bundle (4 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Ice Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Bundle (3 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Left Side Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Bundle (3 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Second Checkpoint Statues Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Bundle (7 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #5",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #6",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Third Checkpoint Uphill Wumpa #7",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Bundle (10 Wumpas)",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fruitbundles"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #1",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #10",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #2",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #3",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #4",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #5",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #6",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #7",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #8",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 				},
                 {
 					"name": "Bear Down Uphill Wumpa #9",
+					"access_rules": "[$polarlocklogic]",
 					"visibility_rules": "$fullsanity"
 			    }
 			],
@@ -10786,6 +10855,12 @@
 			"name": "Bee-Having",
 			"access_rules": "$levelaccess|bee-having",
 			"sections": [
+				{
+					"name": "Bee-Having Secret Area Above Platforms Life",
+					"chest_unopened_img": "images/locations/Life.png",
+					"chest_opened_img": "images/locations/LifeOff.png",
+					"visibility_rules": "lifesanity"
+				},
 				{
 					"name": "Crystal",
 					"chest_unopened_img": "images/items/Crystal.png",
