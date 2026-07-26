@@ -4125,7 +4125,7 @@
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
 					"chest_opened_img": "images/locations/ClearGemOff.png",
-					"access_rules": ["jetboard, $levelaccess|aircrash", "jetboard, $levelaccess|beardown, [$polarlocklogic]"]
+					"access_rules": ["jetboard, $levelaccess|beardown, [$polarlocklogic]"]
 				},
 				{
 					"name": "Clear Gem (Death Route)",
@@ -5314,7 +5314,7 @@
 				},
 				{
 					"name": "Regular Exit",
-					"chest_unopened_img": "images/items/LevelExit.png",
+					"chest_unopened_img": "images/locations/LevelExit.png",
 					"chest_opened_img": "images/locations/LevelExitOff.png",
 					"visibility_rules": "levelexitlocations"
 				}
@@ -11455,7 +11455,7 @@
 			"access_rules": "$levelaccess|pistonitaway",
 			"sections": [
 				{
-					"name": "Piston It Away Between Nitros Life",
+					"name": "Piston it Away Between Nitros Life",
 					"chest_unopened_img": "images/locations/Life.png",
 					"chest_opened_img": "images/locations/LifeOff.png",
 					"visibility_rules": "lifesanity"
@@ -14139,7 +14139,7 @@
 			"chest_unopened_img": "/images/locations/Life.png",
 			"chest_opened_img": "/images/locations/LifeOff.png",
 			"sections": [
-				{
+			{
                 "name": "Collect 5 Lives",
                 "visibility_rules": "$lifecount|5"
             },
@@ -14597,7 +14597,7 @@
 			],
 			"map_locations": [{
 				"map": "Overworld",
-				"x": 80,
+				"x": 505,
 				"y": 30,
 				"size": 20
 			}]
