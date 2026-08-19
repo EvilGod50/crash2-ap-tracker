@@ -86,10 +86,7 @@ function onClear(slotdata)
 	connected = true
 	slot_options(slotdata)
 	warp_room_destinations(slotdata)
-	
-	if slotdata["life_count_checks"] ~= nil then
-		lifes = slotdata["life_count_checks"]
-	end
+	lifes = slotdata["life_count_checks"]
 	
 	player_id = Archipelago.PlayerNumber or -1
 	team_number = Archipelago.TeamNumber or 0

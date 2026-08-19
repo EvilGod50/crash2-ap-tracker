@@ -83,7 +83,7 @@ function slot_options(slotdata)
 		--		opt.CurrentStage = slotval
 		--	end
 		-- end
-		-- Secret entrances have their own slotdata (Currently not randomized in the apworld)
+		-- Secret entrances have their own slotdata (Currently not randomized in the apworld), logic is handled by direct level access with their secret exits instead
 		-- if options["secret_warp_room_entrances"] ~= nil then
 		--	local opt = Tracker:FindObjectForCode("secretwarproomentrances")
 		--	local slotval = options["secret_warp_room_entrances"]
