@@ -33,7 +33,9 @@
                                 "jetpacklocklogic",
                                 "jetboardlocklogic",
                                 "polarlocklogic",
-								"fireflylocklogic"
+								"fireflylocklogic",
+								"abilitylock",
+								"abilitylocklogic"
                             ]
                         ]
                     }

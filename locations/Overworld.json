@@ -17,7 +17,8 @@
 				{
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
-					"chest_opened_img": "images/locations/ClearGemOff.png"				
+					"chest_opened_img": "images/locations/ClearGemOff.png",
+					"access_rules": "^$abilitylocklogic|turtlewoods|boxgem"
 				},
 				{
 					"name": "Blue Gem",
@@ -265,13 +266,13 @@
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
 					"chest_opened_img": "images/locations/ClearGemOff.png",
-					"access_rules": "$levelaccess|snowgo"
+					"access_rules": ["$levelaccess|snowgo, ^$abilitylocklogic|snowgo|boxgem"]
 				},
 				{
 					"name": "Red Gem",
 					"chest_unopened_img": "images/items/RedGem.png",
 					"chest_opened_img": "images/locations/RedGemOff.png",
-					"access_rules": ["$levelaccess|snowgo, [redgemearly]", "$levelaccess|aircrash", "$levelaccess|beardown, [$polarlogic|lunatic]"]
+					"access_rules": ["$levelaccess|snowgo, [redgemearly], $abilitylocklogic|snowgo|redgem", "$levelaccess|aircrash", "$levelaccess|beardown, [$polarlogic|lunatic]"]
 				},
 				{
 					"name": "Regular Exit",
@@ -1842,12 +1843,13 @@
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
 					"chest_opened_img": "images/locations/ClearGemOff.png",
-					"access_rules": "BlueGem"
+					"access_rules": ["BlueGem, $abilitylocklogic|hangeight|boxgem"]
 				},
 				{
 					"name": "Clear Gem (Timer)",
 					"chest_unopened_img": "images/items/ClearGem.png",
-					"chest_opened_img": "images/locations/ClearGemOff.png"
+					"chest_opened_img": "images/locations/ClearGemOff.png",
+					"access_rules": "$abilitylocklogic|hangeight|timer"
 				},
 				{
 					"name": "Regular Exit",
@@ -1944,132 +1946,132 @@
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Bundle (6 Wumpas)",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|bundle"
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Wumpa #1",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Wumpa #2",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Wumpa #3",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Wumpa #4",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Wumpa #5",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 1 Wumpa #6",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, $abilitylocklogic|hangeight|bonus1"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 2 Bundle (4 Wumpas)",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|bundle"
 				},
                 {
 					"name": "Hang Eight Bonus Part 2 Wumpa #1",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 2 Wumpa #2",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 2 Wumpa #3",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 2 Wumpa #4",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Bundle (6 Wumpas)",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|bundle"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Wumpa #1",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Wumpa #2",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Wumpa #3",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Wumpa #4",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Wumpa #5",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 3 Wumpa #6",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Bundle (6 Wumpas)",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|bundle"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Wumpa #1",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Wumpa #2",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Wumpa #3",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Wumpa #4",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Wumpa #5",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "Hang Eight Bonus Part 4 Wumpa #6",
-					"access_rules": "jetboard",
+					"access_rules": ["jetboard, [$abilitylocklogic|hangeight|bonus2-4]"],
 					"visibility_rules": "$wumpasanity|full"
 				}
 			],
@@ -2092,7 +2094,8 @@
 				{
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
-					"chest_opened_img": "images/locations/ClearGemOff.png"
+					"chest_opened_img": "images/locations/ClearGemOff.png",
+					"access_rules": "$abilitylocklogic|thepits|boxgem"
 				},
 				{
 					"name": "Regular Exit",
@@ -2246,22 +2249,27 @@
 				},
                 {
 					"name": "The Pits Bonus Part 4 Bundle (4 Wumpas)",
+					"access_rules": "$abilitylocklogic|thepits|bonus",
 					"visibility_rules": "$wumpasanity|bundle"
 				},
                 {
 					"name": "The Pits Bonus Part 4 Wumpa #1",
+					"access_rules": "$abilitylocklogic|thepits|bonus",
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "The Pits Bonus Part 4 Wumpa #2",
+					"access_rules": "$abilitylocklogic|thepits|bonus",
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "The Pits Bonus Part 4 Wumpa #3",
+					"access_rules": "$abilitylocklogic|thepits|bonus",
 					"visibility_rules": "$wumpasanity|full"
 				},
                 {
 					"name": "The Pits Bonus Part 4 Wumpa #4",
+					"access_rules": "$abilitylocklogic|thepits|bonus",
 					"visibility_rules": "$wumpasanity|full"
 				}
 			],
@@ -2284,7 +2292,8 @@
 				{
 					"name": "Clear Gem (Box Gem)",
 					"chest_unopened_img": "images/items/ClearGem.png",
-					"chest_opened_img": "images/locations/ClearGemOff.png"
+					"chest_opened_img": "images/locations/ClearGemOff.png",
+					"access_rules": "^$abilitylocklogic|crashdash|boxgem"
 				},
 				{
 					"name": "Regular Exit",
@@ -13974,13 +13983,42 @@
 			}]
 		},
 		{
-			"name": "Warp Room 2",
-			"chest_unopened_img": "/images/Items/Polar.png",
-			"chest_opened_img": "/images/locations/Polarsquish.png",
-			"access_rules": ["Crystal:5,polar"],
+			"name": "Warp Room",
 			"sections": [
 				{
-					"name": "Polar Lives Secret"
+					"name": "Ripper Roo Defeated",
+					"chest_unopened_img": "/images/locations/Ripper.png",
+					"chest_opened_img": "/images/locations/RipperOff.png",
+					"access_rules": ["Crystal:5"]
+				},
+				{
+					"name": "Polar Lives Secret",
+					"chest_unopened_img": "/images/Items/Polar.png",
+					"chest_opened_img": "/images/locations/Polarsquish.png",
+					"access_rules": ["Crystal:5,polar"]
+				},
+				{
+					"name": "Komodo Brothers Defeated",
+					"chest_unopened_img": "/images/locations/Komodo.png",
+					"chest_opened_img": "/images/locations/KomodoOff.png",
+					"access_rules": ["Crystal:10"]
+				},
+				{
+					"name": "Tiny Tiger Defeated",
+					"chest_unopened_img": "/images/locations/Tiger.png",
+					"chest_opened_img": "/images/locations/TigerOff.png",
+					"access_rules": ["Crystal:15"]
+				},
+				{
+					"name": "Dr. N. Gin Defeated",
+					"chest_unopened_img": "/images/locations/NGin.png",
+					"chest_opened_img": "/images/locations/NGinOff.png",
+					"access_rules": ["Crystal:20"]
+				},
+				{
+					"name": "Cortex Defeated (Goal)",
+					"chest_unopened_img": "/images/locations/Cortex.png",
+					"access_rules": ["Crystal:25"]
 				}
 			],
 			"map_locations": [{

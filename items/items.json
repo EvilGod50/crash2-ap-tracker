@@ -59,5 +59,59 @@
         "type": "toggle",
         "img": "images/items/Fireflies.png",
         "codes": "Fireflies"
+    },
+    {
+        "name": "Crawl",
+        "type": "toggle",
+        "img": "images/items/Crawl.png",
+        "codes": "Crawl"
+    },
+    {
+        "name": "Slide",
+        "type": "toggle",
+        "img": "images/items/Slide.png",
+        "codes": "Slide"
+    },
+    {
+        "name": "Ground Spin",
+        "type": "toggle",
+        "img": "images/items/GroundSpin.png",
+        "codes": "GroundSpin"
+    },
+    {
+        "name": "Slide Spin",
+        "type": "toggle",
+        "img": "images/items/SlideSpin.png",
+        "codes": "SlideSpin"
+    },
+    {
+        "name": "Jump Spin",
+        "type": "toggle",
+        "img": "images/items/JumpSpin.png",
+        "codes": "JumpSpin"
+    },
+    {
+        "name": "High Jump Spin",
+        "type": "toggle",
+        "img": "images/items/HighJumpSpin.png",
+        "codes": "HighJumpSpin"
+    },
+    {
+        "name": "Slam",
+        "type": "toggle",
+        "img": "images/items/Slam.png",
+        "codes": "Slam"
+    },
+    {
+        "name": "Crouch Jump",
+        "type": "toggle",
+        "img": "images/items/CrouchJump.png",
+        "codes": "CrouchJump"
+    },
+    {
+        "name": "Slide Jump",
+        "type": "toggle",
+        "img": "images/items/SlideJump.png",
+        "codes": "SlideJump"
     }
 ]

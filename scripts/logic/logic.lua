@@ -10,12 +10,12 @@ function wumpasanity(fruit)
 end
 
 -- Gimmick Lock Logic
-function jetpacklogic(jet)
-	if (jet == "normal") then 
+function jetpacklogic(logic)
+	if (logic == "normal") then 
 		if (Tracker:ProviderCountForCode("jetpack") == 1) or (Tracker:ProviderCountForCode("jetpacklocklogic") >= 2) then
 			return true
 		end
-	elseif (jet == "lunatic") then
+	elseif (logic == "lunatic") then
 		if (Tracker:ProviderCountForCode("jetpack") == 1) or (Tracker:ProviderCountForCode("jetpacklocklogic") == 3) then
 			return true
 		end
@@ -26,26 +26,150 @@ function jetboardlogic()
 		return true
 	end
 end
-function polarlogic(bear)
-	if (bear == "normal") then 
+function polarlogic(logic)
+	if (logic == "normal") then 
 		if (Tracker:ProviderCountForCode("polar") == 1) or (Tracker:ProviderCountForCode("polarlocklogic") >= 2) then
 			return true
 		end
-	elseif (bear == "lunatic") then
+	elseif (logic == "lunatic") then
 		if (Tracker:ProviderCountForCode("polar") == 1) or (Tracker:ProviderCountForCode("polarlocklogic") == 3) then
 			return true
 		end
  	end
 end
-function fireflylogic(fly)
-	if (fly == "normal") then
+function fireflylogic(logic)
+	if (logic == "normal") then
 		if (Tracker:ProviderCountForCode("fireflies") == 1) or (Tracker:ProviderCountForCode("fireflylocklogic") >= 2) then
 			return true
 		end
-	elseif (fly == "lunatic") then
+	elseif (logic == "lunatic") then
 		if (Tracker:ProviderCountForCode("fireflies") == 1) or (Tracker:ProviderCountForCode("fireflylocklogic") == 3) then
 			return true
 		end
+	end
+end
+
+-- Ability Lock Logic
+function abilitylocklogic(level, loc)
+	if (level == "turtlewoods")  then
+		if (loc == "boxgem") then
+			if (Tracker:ProviderCountForCode("abilitylocklogic") == 0) then
+				if (Tracker:ProviderCountForCode("slam") == 1) and (Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1) then
+					return true
+				elseif (Tracker:ProviderCountForCode("slam") == 1) then
+					return AccessibilityLevel.SequenceBreak
+				end
+			elseif (Tracker:ProviderCountForCode("abilitylocklogic") == 1) then
+				if (Tracker:ProviderCountForCode("slam") == 1) then
+					return true
+				end
+			end
+		end
+	elseif (level == "snowgo") then
+		if (loc == "redgem") then
+			if (Tracker:ProviderCountForCode("slam") == 1) and (Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1) and (Tracker:ProviderCountForCode("highjumpspin") == 1) then
+				return true
+			end
+		elseif (loc == "boxgem") then
+			if (Tracker:ProviderCountForCode("abilitylocklogic") == 0) then
+				if (Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1) or ((Tracker:ProviderCountForCode("groundspin") == 1) and ((Tracker:ProviderCountForCode("slam") == 1) or (Tracker:ProviderCountForCode("crouchjump") == 1))) then
+					return true
+				elseif (Tracker:ProviderCountForCode("slam") == 1) then
+					return AccessibilityLevel.SequenceBreak
+				end
+			elseif (Tracker:ProviderCountForCode("abilitylocklogic") == 1) then
+				if ((Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1)) or (Tracker:ProviderCountForCode("slam") == 1) or ((Tracker:ProviderCountForCode("crouchjump") == 1) and ((Tracker:ProviderCountForCode("groundspin") == 1) or (Tracker:ProviderCountForCode("jumpspin") == 1) or (Tracker:ProviderCountForCode("highjumpspin") == 1))) then
+					return true
+				end
+			end
+		end
+	elseif (level == "hangeight") then
+		if (loc == "timer") then
+			if (Tracker:ProviderCountForCode("slide") == 1) or (Tracker:ProviderCountForCode("jumpspin") == 1) or (Tracker:ProviderCountForCode("groundspin") == 1) then
+				return true
+			end
+		elseif (loc == "boxgem") then
+			if (Tracker:ProviderCountForCode("jumpspin") == 1) or (Tracker:ProviderCountForCode("groundspin") == 1) or ((Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1)) or ((Tracker:ProviderCountForCode("crouchjump") == 1) and (Tracker:ProviderCountForCode("highjumpspin") == 1)) then
+				return true
+			end
+		elseif (loc == "bonus1") then
+			if (Tracker:ProviderCountForCode("slide") == 1) or (Tracker:ProviderCountForCode("crawl") == 1) then
+				return true
+			end
+		elseif (loc == "bonus2-4") then
+			if (Tracker:ProviderCountForCode("abilitylocklogic") == 0) then
+				if (Tracker:ProviderCountForCode("slide") == 1) or (Tracker:ProviderCountForCode("crawl") == 1) then
+					return true
+				end
+			elseif (Tracker:ProviderCountForCode("abilitylocklogic") == 1) then
+				return true
+			end
+		end
+	elseif (level == "thepits") then
+		if (loc == "boxgem") then
+			if (Tracker:ProviderCountForCode("slam") == 1) and (Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("crawl") == 1) then
+				return true
+			end
+		elseif (loc == "bonus") then
+			if (Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("crawl") == 1) then
+				return true
+			end
+		end
+	elseif (level == "crashdash") then
+		if (loc == "boxgem") then
+			if (Tracker:ProviderCountForCode("abilitylocklogic") == 0) then
+				if (Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1) and (Tracker:ProviderCountForCode("jumpspin") == 1) or ((Tracker:ProviderCountForCode("crouchjump") == 1) and (Tracker:ProviderCountForCode("highjumpspin") == 1)) or ((Tracker:ProviderCountForCode("slide") == 1) and (Tracker:ProviderCountForCode("slidejump") == 1) and (Tracker:ProviderCountForCode("highjumpspin") == 1)) or (Tracker:ProviderCountForCode("groundspin") == 1) then
+					return true
+				elseif (Tracker:ProviderCountForCode("slide") == 1) or (Tracker:ProviderCountForCode("jumpspin") == 1) then
+					return AccessibilityLevel.SequenceBreak
+				end
+			elseif (Tracker:ProviderCountForCode("abilitylocklogic") == 1) then
+				if (Tracker:ProviderCountForCode("slide") == 1) or (Tracker:ProviderCountForCode("groundspin") == 1) or (Tracker:ProviderCountForCode("jumpspin") == 1) then
+					return true
+				end
+			end
+		end
+-- There is no logic for Levels 6+ currently in the APworld
+--	elseif (level == "snowbiz") then
+
+--	elseif (level == "aircrash") then
+
+--	elseif (level == "bearit") then
+
+--	elseif (level == "crashcrush") then
+
+--	elseif (level == "theeeldeal") then
+
+--	elseif (level == "plantfood") then
+
+--	elseif (level == "sewerorlater") then
+
+--	elseif (level == "beardown") then
+
+--	elseif (level == "roadtoruin") then
+
+--	elseif (level == "un-bearable") then
+
+--	elseif (level == "hanginout") then
+
+--	elseif (level == "digginit") then
+
+--	elseif (level == "coldhardcrash") then
+
+--	elseif (level == "ruination") then
+
+--	elseif (level == "bee-having") then
+
+--	elseif (level == "pistonitaway") then
+
+--	elseif (level == "rockit") then
+
+--	elseif (level == "nightfight") then
+
+--	elseif (level == "packattack") then
+
+--	elseif (level == "spacedout") then
+
 	end
 end
 
@@ -191,13 +315,13 @@ end
 function warproomcheck(leveldec)
 	if (warproom1[5] == leveldec) or (warproom1[4] == leveldec) or (warproom1[3] == leveldec) or (warproom1[2] == leveldec) or (warproom1[1] == leveldec) then
 		return true
-	elseif ((Tracker:ProviderCountForCode("crystal") >= 5) and ((warproom2[5] == leveldec) or (warproom2[4] == leveldec) or (warproom2[3] == leveldec) or (warproom2[2] == leveldec) or (warproom2[1] == leveldec))) then
+	elseif ((Tracker:FindObjectForCode("@Warp Room/Ripper Roo Defeated").AvailableChestCount == 0) and ((warproom2[5] == leveldec) or (warproom2[4] == leveldec) or (warproom2[3] == leveldec) or (warproom2[2] == leveldec) or (warproom2[1] == leveldec))) then
 		return true
-	elseif ((Tracker:ProviderCountForCode("crystal") >= 10) and ((warproom3[5] == leveldec) or (warproom3[4] == leveldec) or (warproom3[3] == leveldec) or (warproom3[2] == leveldec) or (warproom3[1] == leveldec))) then
+	elseif ((Tracker:FindObjectForCode("@Warp Room/Komodo Brothers Defeated").AvailableChestCount == 0) and ((warproom3[5] == leveldec) or (warproom3[4] == leveldec) or (warproom3[3] == leveldec) or (warproom3[2] == leveldec) or (warproom3[1] == leveldec))) then
 		return true
-	elseif ((Tracker:ProviderCountForCode("crystal") >= 15) and ((warproom4[5] == leveldec) or (warproom4[4] == leveldec) or (warproom4[3] == leveldec) or (warproom4[2] == leveldec) or (warproom4[1] == leveldec))) then
+	elseif ((Tracker:FindObjectForCode("@Warp Room/Tiny Tiger Defeated").AvailableChestCount == 0) and ((warproom4[5] == leveldec) or (warproom4[4] == leveldec) or (warproom4[3] == leveldec) or (warproom4[2] == leveldec) or (warproom4[1] == leveldec))) then
 		return true
-	elseif ((Tracker:ProviderCountForCode("crystal") >= 20) and ((warproom5[5] == leveldec) or (warproom5[4] == leveldec) or (warproom5[3] == leveldec) or (warproom5[2] == leveldec) or (warproom5[1] == leveldec))) then
+	elseif ((Tracker:FindObjectForCode("@Warp Room/Dr. N. Gin Defeated").AvailableChestCount == 0) and ((warproom5[5] == leveldec) or (warproom5[4] == leveldec) or (warproom5[3] == leveldec) or (warproom5[2] == leveldec) or (warproom5[1] == leveldec))) then
 		return true
 	end
 end

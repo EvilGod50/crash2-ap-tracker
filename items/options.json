@@ -86,5 +86,19 @@
         "initial_quantity": 0,
 		"max_quantity": 3,
         "codes": "fireflylocklogic"
+    },
+	{
+        "name": "Ability Lock",
+        "type": "toggle",
+        "img": "images/items/GroundSpin.png",
+        "codes": "abilitylock"
+    },
+	{
+        "name": "Ability Lock Logic",
+        "type": "consumable",
+        "img": "images/items/GroundSpin.png",
+        "initial_quantity": 0,
+		"max_quantity": 1,
+        "codes": "abilitylocklogic"
     }
 ]

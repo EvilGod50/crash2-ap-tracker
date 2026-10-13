@@ -32,6 +32,17 @@
                                 "Jetpack",
                                 "Jetboard",
                                 "Fireflies"
+                            ],
+							[
+                                "Crawl",
+                                "Slide",
+                                "GroundSpin",
+                                "SlideSpin",
+								"JumpSpin",
+								"HighJumpSpin",
+								"Slam",
+								"CrouchJump",
+								"SlideJump"
                             ]
                         ]
                     }

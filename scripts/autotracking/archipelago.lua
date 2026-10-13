@@ -67,6 +67,15 @@ function onClear(slotdata)
 	Tracker:FindObjectForCode("Jetpack").Active = true
 	Tracker:FindObjectForCode("Jetboard").Active = true
 	Tracker:FindObjectForCode("Fireflies").Active = true
+	Tracker:FindObjectForCode("Crawl").Active = true
+	Tracker:FindObjectForCode("Slide").Active = true
+	Tracker:FindObjectForCode("GroundSpin").Active = true
+	Tracker:FindObjectForCode("SlideSpin").Active = true
+	Tracker:FindObjectForCode("JumpSpin").Active = true
+	Tracker:FindObjectForCode("HighJumpSpin").Active = true
+	Tracker:FindObjectForCode("Slam").Active = true
+	Tracker:FindObjectForCode("CrouchJump").Active = true
+	Tracker:FindObjectForCode("SlideJump").Active = true
 	
 	-- reset options
 	Tracker:FindObjectForCode("levelexitlocations").Active = false
@@ -82,6 +91,8 @@ function onClear(slotdata)
 	Tracker:FindObjectForCode("jetboardlocklogic").AcquiredCount = 0
 	Tracker:FindObjectForCode("polarlocklogic").AcquiredCount = 0
 	Tracker:FindObjectForCode("fireflylocklogic").AcquiredCount = 0
+	Tracker:FindObjectForCode("abilitylock").Active = false
+	Tracker:FindObjectForCode("abilitylocklogic").AcquiredCount = 0
 	
 	connected = true
 	slot_options(slotdata)
@@ -93,7 +104,7 @@ function onClear(slotdata)
 	
 	if Archipelago.PlayerNumber > -1 then											
 		hints_id = "_read_hints_"..team_number.."_"..player_id
-		world_id = "Crash2_"..team_number.."_"..player_id
+		world_id = "Crash 2_"..team_number.."_"..player_id
 	    if Highlight then
             Archipelago:SetNotify({hints_id, world_id})
             Archipelago:Get({hints_id, world_id})		
@@ -171,16 +182,10 @@ function onNotifyLaunch(key, value)
 end
 
 function updateHints(locationnum, status)
-    if not Highlight then 
-		return
-	end
-	
 	local locations = LOCATION_MAPPING[locationnum]
     for _, location in ipairs(locations) do
         local obj = Tracker:FindObjectForCode(location)
-        if obj then
-			obj.Highlight = PriorityToHighlight[status]
-        end
+		obj.Highlight = highlightstatus[status]
 	end
 end
 	   

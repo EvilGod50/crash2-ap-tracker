@@ -12,6 +12,7 @@ LOCATION_MAPPING = {
 	[11] = {"@The Pits/Clear Gem (Box Gem)"},
 	[12] = {"@Crash Dash/Crystal"},
 	[13] = {"@Crash Dash/Clear Gem (Box Gem)"},
+	[14] = {"@Warp Room/Ripper Roo Defeated"},
 	[15] = {"@Snow Biz/Crystal"},
 	[16] = {"@Snow Biz/Clear Gem (Box Gem)"},
 	[17] = {"@Air Crash/Crystal"},
@@ -24,6 +25,7 @@ LOCATION_MAPPING = {
 	[24] = {"@The Eel Deal/Crystal"},
 	[25] = {"@The Eel Deal/Clear Gem (Box Gem)"},
 	[26] = {"@The Eel Deal/Green Gem"},
+	[27] = {"@Warp Room/Komodo Brothers Defeated"},
 	[28] = {"@Plant Food/Crystal"},
 	[29] = {"@Plant Food/Clear Gem (Box Gem)"},
 	[30] = {"@Plant Food/Yellow Gem"},
@@ -37,6 +39,7 @@ LOCATION_MAPPING = {
 	[38] = {"@Road to Ruin/Clear Gem (Death Route)"},
 	[39] = {"@Un-Bearable/Crystal"},
 	[40] = {"@Un-Bearable/Clear Gem (Box Gem)"},
+	[41] = {"@Warp Room/Tiny Tiger Defeated"},
 	[42] = {"@Hangin Out/Crystal"},
 	[43] = {"@Hangin Out/Clear Gem (Box Gem)"},
 	[44] = {"@Diggin It/Crystal"},
@@ -51,6 +54,7 @@ LOCATION_MAPPING = {
 	[53] = {"@Bee-Having/Crystal"},
 	[54] = {"@Bee-Having/Clear Gem (Box Gem)"},
 	[55] = {"@Bee-Having/Purple Gem"},
+	[56] = {"@Warp Room/Dr. N. Gin Defeated"},
 	[57] = {"@Piston it Away/Crystal"},
 	[58] = {"@Piston it Away/Clear Gem (Box Gem)"},
 	[59] = {"@Piston it Away/Clear Gem (Death Route)"},
@@ -64,6 +68,7 @@ LOCATION_MAPPING = {
 	[67] = {"@Spaced Out/Crystal"},
 	[68] = {"@Spaced Out/Clear Gem (Box Gem)"},
 	[69] = {"@Spaced Out/Clear Gem (All Colored Gems Path)"},
+	-- [70] = {"@Warp Room/Cortex Defeated"}, Cortex has no location, the location square is for Go Mode only (Should be using ID 70 if added?)
 	[71] = {"@Totally Bear/Clear Gem (Box Gem)"},
 	[72] = {"@Totally Fly/Clear Gem (Box Gem)"},
 	[73] = {"@Turtle Woods/Regular Exit"},
@@ -98,14 +103,7 @@ LOCATION_MAPPING = {
 	[106] = {"@Diggin It/Secret Exit"},
 	[107] = {"@Un-Bearable/Secret Exit"},
 	[108] = {"@Bear Down/Secret Exit"},
-	[109] = {"@Warp Room 2/Polar Lives Secret"},
-	
-	-- Bosses (Unused)
-	-- [14] = {"@Ripper Roo Defeated"},
-	-- [27] = {"@Komodo Brothers Defeated"},
-	-- [41] = {"@Tiny Tiger Defeated"},
-	-- [56] = {"@Dr. N. Gin Defeated"},
-	-- Cortex has no location
+	[109] = {"@Warp Room/Polar Lives Secret"},
 	
 	-- Wumpa Fruit
 	[20000] = {"@Turtle Woods Wumpa Fruit/Turtle Woods Checkpoint 0 Wumpa #1"},
