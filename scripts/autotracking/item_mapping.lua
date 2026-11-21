@@ -26,4 +26,6 @@ ITEM_MAPPING = {
 	[24] = {{"Slam", "toggle"}},
 	[25] = {{"CrouchJump", "toggle"}},
 	[26] = {{"SlideJump", "toggle"}},
+	[27] = {{"Dig", "toggle"}},
+	-- [28] = {{"Lunacy", "toggle"}}, Glitched item for UT not required for Poptracker
 }

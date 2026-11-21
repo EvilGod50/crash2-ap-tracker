@@ -113,5 +113,11 @@
         "type": "toggle",
         "img": "images/items/SlideJump.png",
         "codes": "SlideJump"
+    },
+	{
+        "name": "Dig",
+        "type": "toggle",
+        "img": "images/items/Dig.png",
+        "codes": "Dig"
     }
 ]

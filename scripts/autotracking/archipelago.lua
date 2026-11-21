@@ -76,6 +76,7 @@ function onClear(slotdata)
 	Tracker:FindObjectForCode("Slam").Active = true
 	Tracker:FindObjectForCode("CrouchJump").Active = true
 	Tracker:FindObjectForCode("SlideJump").Active = true
+	Tracker:FindObjectForCode("Dig").Active = true
 	
 	-- reset options
 	Tracker:FindObjectForCode("levelexitlocations").Active = false

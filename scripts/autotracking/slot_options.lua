@@ -2,7 +2,7 @@ function slot_options(slotdata)
 	
 	options = slotdata["options"]
 	
-    if options["level_exit_locations"] ~= nil then
+    if options["level_exit_locations"] == 1 then
 		Tracker:FindObjectForCode("levelexitlocations").Active = true
 	end
 	
@@ -26,18 +26,18 @@ function slot_options(slotdata)
 	if options["fruit_sanity"] ~= nil then
 		local slotval = options["fruit_sanity"]
 		Tracker:FindObjectForCode("fruitsanity").AcquiredCount = slotval
-		if options["exclude_difficult_wumpas"] ~= nil then
+		if options["exclude_difficult_wumpas"] == 1 then
 			Tracker:FindObjectForCode("excludedifficultwumpas").Active = true
 		end
 	end
 	
 	-- Life Sanity Slot Settings
-	if options["life_sanity"] ~= nil then
+	if options["life_sanity"] == 1 then
 		Tracker:FindObjectForCode("lifesanity").Active = true
 	end
 	
 	-- Entrance Randomizer Slot Settings
-	if options["randomize_warp_destinations"] ~= nil then
+	if options["randomize_warp_destinations"] == 1 then
 		Tracker:FindObjectForCode("randomizewarpdestinations").Active = true
 		-- Pull the randomized levels from slot data for logic
 		if options["warp_room_destinations"] ~= nil then
@@ -95,5 +95,6 @@ function slot_options(slotdata)
 		Tracker:FindObjectForCode("Slam").Active = false
 		Tracker:FindObjectForCode("CrouchJump").Active = false
 		Tracker:FindObjectForCode("SlideJump").Active = false
+		Tracker:FindObjectForCode("Dig").Active = false
 	end
 end

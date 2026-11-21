@@ -9,6 +9,7 @@ Tracker:AddLayouts("layouts/settings.json")
 Tracker:AddMaps("maps/overworld.json")
 
 ScriptHost:LoadScript("scripts/logic/logic.lua")
+ScriptHost:LoadScript("scripts/logic/logic_helper.lua")
 
 Tracker:AddLocations("locations/Overworld.json")
 

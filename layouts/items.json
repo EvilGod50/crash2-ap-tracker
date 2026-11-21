@@ -42,7 +42,8 @@
 								"HighJumpSpin",
 								"Slam",
 								"CrouchJump",
-								"SlideJump"
+								"SlideJump",
+								"Dig"
                             ]
                         ]
                     }
